@@ -1,0 +1,14 @@
+Jose@DESKTOP-KOQ9THJ MINGW64 ~
+$ git config --global user.name "Jose Manuel"
+
+Jose@DESKTOP-KOQ9THJ MINGW64 ~
+$ git config --global user.email "soldadojimenezj@gmail.com"
+
+Jose@DESKTOP-KOQ9THJ MINGW64 ~
+$ git config --global core.editor "code --wait"
+
+Jose@DESKTOP-KOQ9THJ MINGW64 ~
+$ git config --global color.ui true
+
+Jose@DESKTOP-KOQ9THJ MINGW64 ~
+$ git config --global core.autocrlf true
