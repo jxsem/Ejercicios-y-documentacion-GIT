@@ -1,0 +1,57 @@
+git add <archivo>
+Uso: Añade archivos al área de staging para prepararlos para el commit.
+Ejemplo: git add README.txt
+
+git commit -m "mensaje"
+Uso: Crea un nuevo commit con los cambios que se encuentran en el área de staging.
+Ejemplo: git commit -m "Añadido archivo README.txt"
+
+git status
+Uso: Muestra el estado actual del repositorio, incluyendo los archivos modificados, los archivos en staging y los archivos no rastreados.
+Ejemplo: git status
+
+git checkout <rama>
+Uso: Cambia a una rama diferente en el repositorio.
+Ejemplo: git checkout feature-branch
+
+git restore <archivo>
+Uso: Deshace los cambios en un archivo específico, devolviéndolo al estado del último commit.
+Ejemplo: git restore README.txt
+
+git diff
+Uso: Muestra las diferencias entre los cambios realizados en el área de trabajo y el último commit.
+Ejemplo: git diff
+
+
+########### NAVEGACION Y GESTION ##################
+
+cd <directorio>
+Uso: Cambia el directorio de trabajo actual.
+Ejemplo: cd ~/projects (cambia al directorio projects en el directorio principal del usuario)
+
+ls
+Uso: Lista los archivos y directorios en el directorio actual.
+Ejemplo: ls (lista todos los archivos y carpetas en el directorio actual)
+
+pwd
+Uso: Muestra la ruta completa del directorio de trabajo actual.
+Ejemplo: pwd (muestra la ruta actual como /home/user/projects)
+
+clear
+Uso: Limpia la pantalla de la terminal, eliminando todos los comandos y salida anteriores.
+Ejemplo: clear (limpia la pantalla)
+
+mkdir <directorio>
+Uso: Crea un nuevo directorio con el nombre especificado.
+Ejemplo: mkdir new-folder (crea un nuevo directorio llamado new-folder)
+
+rm <archivo>
+Uso: Elimina un archivo.
+Ejemplo: rm oldfile.txt (elimina el archivo oldfile.txt)
+
+rmdir <directorio>
+Uso: Elimina un directorio vacío.
+Ejemplo: rmdir oldfolder (elimina el directorio oldfolder si está vacío)
+
+touch <archivo>
+Uso: Crea un nuevo archivo vacío o actualiza la fecha de modificación de un archivo existente.
