@@ -2,7 +2,7 @@ git add <archivo>
 Uso: Añade archivos al área de staging para prepararlos para el commit.
 Ejemplo: git add README.txt
 
-git commit -m "mensaje"
+git commit -m "mensaje" (--amend para realizar algun cambio en el ultimo commit que se haya oolvidado)
 Uso: Crea un nuevo commit con los cambios que se encuentran en el área de staging.
 Ejemplo: git commit -m "Añadido archivo README.txt"
 
@@ -14,13 +14,19 @@ git checkout <rama>
 Uso: Cambia a una rama diferente en el repositorio.
 Ejemplo: git checkout feature-branch
 
-git restore <archivo>
-Uso: Deshace los cambios en un archivo específico, devolviéndolo al estado del último commit.
-Ejemplo: git restore README.txt
-
 git diff
 Uso: Muestra las diferencias entre los cambios realizados en el área de trabajo y el último commit.
 Ejemplo: git diff
+
+git log
+Uso: Muestra todos los commits que se han realizado
+Ejemplo: git log (usar q para salir del paginador o git log --no-pager, git log --oneline para que salga una linea del commit)
+
+git reset <git-hash>
+Uso: Borrar commit
+Ejemplo: git restore --soft <1234abc> (atributo --soft te lo manda a staging)
+        git restore --hard <1234abc> (atributo --hard te va a borrar el commit y te lo manda al area de trabajo)
+
 
 
 ########### NAVEGACION Y GESTION ##################
@@ -55,3 +61,27 @@ Ejemplo: rmdir oldfolder (elimina el directorio oldfolder si está vacío)
 
 touch <archivo>
 Uso: Crea un nuevo archivo vacío o actualiza la fecha de modificación de un archivo existente.
+
+########################### RAMAS #######################################
+Rama principal -> master
+
+git branch 
+Uso: Mostrar todas las ramas que tenemos creadas
+Ejemplo: git branch 
+
+git branch nombre-de-la-rama
+Uso: Hacer una nueva rama
+Ejemplo: git branch add-color-background
+
+git switch nombre-de-la-rama
+Uso: Moverte a la rama 
+Ejemplo: git switch add-color-background
+
+git branch -d nombre-de-la-rama
+Uso: Borrar la rama
+
+git branch -m rama-textouno rama-textodos
+Uso: Modificar el nombre de la rama sin estar en ella (primero el nombre de la rama y luego el nombre que queremos)
+
+git branch -m cambiartexto
+Uso: Modificar el nombre de la rama ESTANDO en la rama
