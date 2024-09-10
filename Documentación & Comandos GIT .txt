@@ -18,16 +18,32 @@ git diff
 Uso: Muestra las diferencias entre los cambios realizados en el área de trabajo y el último commit.
 Ejemplo: git diff
 
-git log
+git log --all
 Uso: Muestra todos los commits que se han realizado
 Ejemplo: git log (usar q para salir del paginador o git log --no-pager, git log --oneline para que salga una linea del commit)
 
 git reset <git-hash>
-Uso: Borrar commit
-Ejemplo: git restore --soft <1234abc> (atributo --soft te lo manda a staging)
-        git restore --hard <1234abc> (atributo --hard te va a borrar el commit y te lo manda al area de trabajo)
+Uso: Quita los archivos del área de preparación, pero mantiene los cambios en los archivos.
+Ejemplo: git reset --soft <1234abc> (atributo --soft te lo manda a staging)
+         git reset --hard <1234abc> (atributo --hard te va a borrar el commit y te lo manda al area de trabajo)
 
+        git reset --soft: Este comando deshace los commits pero mantiene los cambios en el área de preparación (staging area) 
+        y en el directorio de trabajo. Es útil si quieres deshacer el commit pero conservar los cambios para que puedas hacer ajustes antes de volver a cometer.
+        Uso Típico: Es útil para deshacer commits recientes cuando deseas realizar ajustes antes de volver a hacer commit.
 
+        git reset --hard: Este comando deshace los commits y descarta los cambios tanto del área de preparación como del directorio de trabajo. 
+        Los cambios no comprometidos se perderán, así que es más destructivo y se usa cuando quieres eliminar completamente los cambios.
+        
+
+git checkout 
+Uso: Para revertir el archivo a la versión más reciente del índice (área de staging)
+
+git revert 
+Uso: Para deshacer un commit específico sin alterar el historial del repositorio.
+El comando git revert es más adecuado para deshacer un commit específico porque crea un nuevo commit que deshace los cambios del commit original. 
+Esto mantiene el historial de commits intacto y es seguro para repositorios compartidos.
+git revert <commit que quieras revertir>
+¡¡¡¡¡ Se crea un nuevo commit que eliminó esos cambios !!!!!
 
 ########### NAVEGACION Y GESTION ##################
 
@@ -85,3 +101,7 @@ Uso: Modificar el nombre de la rama sin estar en ella (primero el nombre de la r
 
 git branch -m cambiartexto
 Uso: Modificar el nombre de la rama ESTANDO en la rama
+
+git merge rama-a-fusionar
+Uso: Fusionar commit en la rama (posicionarnos en la rama donde queremos fusionar)
+git merge --continue (cuando solucionamos conflicto)
