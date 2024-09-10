@@ -105,3 +105,11 @@ Uso: Modificar el nombre de la rama ESTANDO en la rama
 git merge rama-a-fusionar
 Uso: Fusionar commit en la rama (posicionarnos en la rama donde queremos fusionar)
 git merge --continue (cuando solucionamos conflicto)
+
+.gitignore 
+Uso: Crea un archivo donde se guardaría los archivos que se van a ignorar
+ejemplo: 
+
+archivo.txt -> archivo especificado
+*txt -> todos los archivos que terminan por esa extensión
+carpeta/* -> todos los archivos de esa carpeta
