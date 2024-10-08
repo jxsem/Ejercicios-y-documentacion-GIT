@@ -148,5 +148,10 @@ Bajar los cambios que estan en el servidor sin hacer una fusion
 git switch --detach origin/main (se crea una rama temporal para visualizar los cambios)
 
 MIGRAR REPOSITORIO LOCAL 
+(es como configurar el repositorio remoto)
 
+git remote add origin htpps://url-de-repositorio
+git remove -v (todas las cosas que puedes hacer con el repositorio remoto)
+git branch -M main
+git push -u origin main (para hacer el primer push tienes que aclarar a donde haces el push)
 
