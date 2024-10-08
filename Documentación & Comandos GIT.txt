@@ -36,7 +36,9 @@ Ejemplo: git reset --soft <1234abc> (atributo --soft te lo manda a staging)
         
 
 git checkout 
-Uso: Para revertir el archivo a la versión más reciente del índice (área de staging)
+Uso: Para revertir el archivo a la versión más reciente del índice (área de staging) -> git checkout a1b2c3d4e5f6g7h8i9j0
+Uos: Para moverte de rama -> git checkout nombre-rama
+
 
 git revert 
 Uso: Para deshacer un commit específico sin alterar el historial del repositorio.
@@ -113,3 +115,38 @@ ejemplo:
 archivo.txt -> archivo especificado
 *txt -> todos los archivos que terminan por esa extensión
 carpeta/* -> todos los archivos de esa carpeta
+
+
+******************************CREAR EL REPOSITORIO EN GI/GITHUB***************************************
+readme (puntos a tener en cuenta)
+# escribe texto en negrita y sirve como encabezado
+## escribe tambien en negrita y sirve para dar enfasis a lo que se está explicando
+
+Issues Loading
+Tareas tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.
+
+##################################DANGER ZONE###########################################################
+Cambiar la visibilidad del proyecto
+disable branch protection rules -> NO TOCAR
+Transferir la propiedad del repositorio
+Archivarlo y no tienes opcion a modificarlo
+Eliminarlo
+
+##########################USAR GIT Y GITHUB / COMANDOS########################################
+GIT CLONE -> Coger un repositorio de la nube y traerlo a local
+git clone https://ulr-del-repo.com
+
+GIT PUSH -> Empujar repositorio desde local a la nube
+(si usas el clone, usas git push origin master)
+
+GIT PULL 
+Bajar los cambios que estan en el servidor y fusiona directamente a la rama
+
+GIT FETCH
+Bajar los cambios que estan en el servidor sin hacer una fusion
+
+git switch --detach origin/main (se crea una rama temporal para visualizar los cambios)
+
+MIGRAR REPOSITORIO LOCAL 
+
+
