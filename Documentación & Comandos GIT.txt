@@ -117,13 +117,14 @@ archivo.txt -> archivo especificado
 carpeta/* -> todos los archivos de esa carpeta
 
 
-******************************CREAR EL REPOSITORIO EN GI/GITHUB***************************************
+******************************CREAR EL REPOSITORIO EN GIT/GITHUB***************************************
 readme (puntos a tener en cuenta)
 # escribe texto en negrita y sirve como encabezado
 ## escribe tambien en negrita y sirve para dar enfasis a lo que se está explicando
 
 Issues Loading
 Tareas tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.
+Fork: Crear una copia 
 
 ##################################DANGER ZONE###########################################################
 Cambiar la visibilidad del proyecto
@@ -154,4 +155,9 @@ git remote add origin htpps://url-de-repositorio
 git remove -v (todas las cosas que puedes hacer con el repositorio remoto)
 git branch -M main
 git push -u origin main (para hacer el primer push tienes que aclarar a donde haces el push)
+
+
+#############DIFERENCIAS ENTRE GIT CLONE Y FORK####################
+GIT CLONE -> Se clona el repositorio al pc
+FORK-> Desde github, se sube a nuestra cuenta de github (BIFURCACION)
 
